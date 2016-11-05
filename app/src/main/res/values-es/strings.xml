@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Aplicacion para el Reciclaje</string>
+    <string name="action_settings">Configuracion</string>
+    <string name="app_title">Sistema</string>
+    <string name="interstitial_ad_sample">Insertar ejemplo</string>
+    <string name="interstitial_ad_unit_id">Pureba1</string>
+    <string name="next_level">Siguiente</string>
+    <string name="start_level">Nivel 1</string>
+</resources>
