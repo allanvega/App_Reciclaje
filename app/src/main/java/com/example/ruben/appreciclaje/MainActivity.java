@@ -11,8 +11,6 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        // Create the next level button, which tries to show an interstitial when clicked.
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
