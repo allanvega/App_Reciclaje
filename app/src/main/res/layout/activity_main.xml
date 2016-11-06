@@ -1,33 +1,79 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 tools:context="com.example.ruben.appreciclaje.MainActivity">
 
     <!-- view for AdMob Interstitial Ad -->
-    <TextView
-        android:id="@+id/app_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:text="@string/interstitial_ad_sample"
-        android:textAppearance="?android:attr/textAppearanceLarge"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/level"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/app_title"
-        android:layout_centerHorizontal="true"
-        android:text="@string/start_level"
-        android:textAppearance="?android:attr/textAppearanceLarge"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
 
-    <Button
-        android:id="@+id/next_level_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/next_level"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/cast_abc_scrubber_control_off_mtrl_alpha"
+                android:id="@+id/imagePapel"
+                android:layout_weight="1"
+                android:background="@mipmap/image_carton"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/cast_expanded_controller_seekbar_thumb"
+                android:id="@+id/imageVidrio"
+                android:layout_weight="1"
+                android:visibility="visible"
+                android:background="@mipmap/img_vidrio"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/cast_abc_scrubber_control_off_mtrl_alpha"
+                android:id="@+id/imagePlastico"
+                android:layout_weight="1"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/cast_expanded_controller_seekbar_thumb"
+                android:id="@+id/imageMetal"
+                android:layout_weight="1"
+                android:visibility="visible"
+                android:backgroundTint="@mipmap/image_carton"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/cast_abc_scrubber_control_off_mtrl_alpha"
+                android:id="@+id/imageBateria"
+                android:layout_weight="1"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/cast_expanded_controller_seekbar_thumb"
+                android:id="@+id/imageGoma"
+                android:layout_weight="1"
+                android:visibility="visible"
+                android:background="@mipmap/image_goma"/>
+        </LinearLayout>
+    </LinearLayout>
 </RelativeLayout>
